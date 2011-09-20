@@ -3,7 +3,7 @@ var couch_sqlite = require('couch-sqlite');
 command = Bones.Command.extend();
 command.description = 'listen for changes';
 command.prototype.initialize = function(options) {
-    var schema = "OGC_FID INTEGER, 'pop90' INTEGER, 'povrate' FLOAT";
+    var schema = "iso_codes VARCHAR, wb_names VARCHAR, factor INTEGER";
 
     var connection = couch_sqlite({
         sqlite: options.config.files + '/data.sqlite',
@@ -14,9 +14,9 @@ command.prototype.initialize = function(options) {
         couchDb: options.config.couchPrefix + '_data',
         map: function(record) {
             var item = {
-                OGC_FID: record.OGC_FID,
-                pop90: record.pop90,
-                povrate: record.povrate
+                iso_codes: record.iso_codes,
+                wb_names: record.wb_names,
+                factor: record.factor
             };
             return item;
         }
@@ -24,5 +24,5 @@ command.prototype.initialize = function(options) {
     connection.on('error', function(err) {
         console.warn(err);
     });
-    connection.run(true);
+    connection.run();
 };

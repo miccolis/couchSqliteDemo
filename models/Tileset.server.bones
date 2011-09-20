@@ -20,8 +20,8 @@ var Cache = function() {
     this.available = false;
 
     // TODO make mml filename & directory attribute on the model.
-    this.filename = 'dcdemo.mml';
-    this.base = path.normalize(__dirname + '/../resources/map/');
+    this.filename = 'gain.mml';
+    this.base = path.normalize(__dirname + '/../resources/gain-map/');
 }
 util.inherits(Cache, events.EventEmitter);
 
@@ -79,7 +79,7 @@ Cache.prototype.load = function() {
 
             // This file does not exist; but we pass in literal strings below.
             // This is used as a cache key.
-            pathname: path.join('resources/map', 'foo.xml'),
+            pathname: path.join('resources/gain-map', 'foo.xml'),
             query: {
                 //updated: map.mml._updated,
                 bufferSize: 0,
@@ -98,7 +98,7 @@ Cache.prototype.load = function() {
         uri.mml = that.mml;
         
         tilelive.load(uri, function(err, source) {
-            if (err) return options.error(err);
+            if (err) return that.emit('error', err);
 
             that.source = source;
 

@@ -2,7 +2,7 @@ model = Backbone.Model.extend({
    defaults: { 
         lat:  38.9,
         lon: -77,
-        z: 11,
+        z: 2,
     },
     tilejson: function() {
 
@@ -15,8 +15,8 @@ model = Backbone.Model.extend({
             tiles: tiles,
             grids: grids,
             formatter: function() { return '' },
-            minzoom: 11,
-            maxzoom: 14
+            minzoom: 0,
+            maxzoom: 6 
         };
     }
 });

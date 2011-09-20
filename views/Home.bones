@@ -11,9 +11,9 @@ view = views.Main.extend({
         var hoods = [];
         this.collection.each(function(hood) {
             hoods.push({
-                fid: hood.get('OGC_FID'),
-                population: hood.get('pop90'),
-                poverty: hood.get('povrate')
+                iso_codes: hood.get('iso_codes'),
+                wb_names: hood.get('wb_names'),
+                factor: hood.get('factor')
             });
         });
         $('table', this.el).empty().append(templates.Table({hoods: hoods}));
@@ -30,20 +30,15 @@ view = views.Main.extend({
             redraw = false;
 
         $('table tbody tr', this.el).each(function() {
-            var fid = parseInt($('td', this).get(0).innerText),
-                pop90 = parseInt($('td', this).get(1).innerText),
-                povrate = parseFloat($('td', this).get(2).innerText);
+            var iso = $('td', this).get(0).innerText,
+                factor = parseInt($('td', this).get(2).innerText);
 
-            var model = collection.get(fid),
+            var model = collection.get(iso),
                 changes = false;
 
-            if (model.get('pop90') !=  pop90) {
+            if (model.get('factor') !=  factor) {
                 changes = changes || {}
-                changes.pop90 = pop90; 
-            }
-            if (model.get('povrate') != povrate) {
-                changes = changes || {}
-                changes.povrate = povrate; 
+                changes.factor = factor; 
             }
 
             if (changes) {

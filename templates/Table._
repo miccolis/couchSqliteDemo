@@ -1,8 +1,8 @@
-<thead><tr><th>Feature</th><th>Population</th><th>Poverty</th></tr></thead>
+<thead><tr><th>Feature</th><th>Population</th><th>Factor</th></tr></thead>
 <tbody>
   <% _.each(hoods, function(row) { %><tr>
-      <td><%= row.fid %></td>
-      <td class='data' contenteditable="true"><%= row.population %></td>
-      <td class='data' contenteditable="true"><%= row.poverty %></td>
+      <td><%= row.iso_codes %></td>
+      <td><%= row.wb_names%></td>
+      <td class='data' contenteditable="true"><%= row.factor%></td>
   </tr><% }); %>
 </tbody>
