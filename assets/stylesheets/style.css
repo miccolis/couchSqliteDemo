@@ -1,0 +1,35 @@
+.limiter {
+  width: 1024px;
+  margin: 0px auto;
+}
+#header {
+  height: 30px;
+  background: #666;
+  }
+
+#header h1,
+#header p {
+  float: left;
+  }
+
+#map {
+  width: 680px;
+  height: 700px;
+  float: left;
+}
+
+#controls {
+  width: 340px;
+  float: right;
+  height: 700px;
+  overflow: scroll;
+}
+
+table { table-layout: fixed; }
+table tr {
+  border: 1px solid #666;
+  }
+table th,
+table td {
+  padding: 5px;
+  }

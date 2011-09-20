@@ -1,0 +1,66 @@
+{
+  "bounds": [
+    -180,
+    -85.05112877980659,
+    180,
+    85.05112877980659
+  ],
+  "center": [
+    -77.04741954803441,
+    38.956572233697415,
+    12
+  ],
+  "format": "png",
+  "interactivity": false,
+  "minzoom": 0,
+  "maxzoom": 22,
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "geometry": "polygon",
+      "id": "boundry",
+      "name": "boundry",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "layers/boundry/DCGIS_DCBndyPly.shp",
+        "id": "boundry",
+        "srs": "",
+        "project": "dcdemo"
+      }
+    },
+    {
+      "geometry": "polygon",
+      "id": "water",
+      "name": "water",
+      "srs": "",
+      "class": "",
+      "Datasource": {
+        "file": "layers/water/WaterPly.shp",
+        "id": "water",
+        "srs": "",
+        "project": "dcdemo"
+      }
+    },
+    {
+      "geometry": "polygon",
+      "id": "hoods",
+      "name": "hoods",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "class": "",
+      "Datasource": {
+        "file": "layers/hoods.sqlite",
+        "id": "hoods",
+        "project": "dcdemo",
+        "table": "(SELECT nbhdcomposition.* FROM nbhdcomposition)",
+        "key_field": "",
+        "geometry_table":"nbhdcomposition",
+        "geometry_field":"GEOMETRY",
+        "type": "sqlite",
+        "extent": "-20037508.34,-20037508.34,20037508.34,20037508.34"
+      }
+    }
+  ]
+}

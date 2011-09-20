@@ -1,0 +1,31 @@
+{
+  "author": "Jeff Miccolis <jeff@miccolis.net>",
+  "name": "demo",
+  "version": "0.0.0",
+  "repository": {
+    "url": ""
+  },
+  "engines": {
+    "node": "~v0.4.10"
+  },
+  "dependencies": {
+    "bones": "= 2.0.0",
+    "bones-admin": "= 2.0.0",
+    "bones-auth": "= 2.0.0",
+    "bones-document": "= 2.0.0",
+    "backbone-stash": "= 0.5.0",
+    "underscore": "= 1.1.7",
+    "request": "https://github.com/mikeal/request/tarball/8bb7f98ba8b78c217552c979811c07f1299318fe",
+    "backbone-couch": "= 1.0.0",
+    "sqlite3": "= 2.0.16",
+    "tilelive": "= 4.0.5",
+    "tilelive-mapnik" : "= 0.2.1",
+    "mapnik": "0.5.3",
+    "carto": "= 0.2.3",
+    "millstone": "= 0.1.1",
+    "wax": "3.0.6",
+    "modestmaps": "= 0.18.4",
+    "couch-sqlite": "= 0.0.1"
+  },
+  "devDependencies": {}
+}
