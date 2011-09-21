@@ -1,7 +1,7 @@
 <div id="map"></div>
 
 <div id='controls'>
-  <h2>Funding controls</h2>
+  <h2>Controls</h2>
   <input type="submit" value="refresh" class="refresh"></input>
-  <table></table>
+  <div class="input-table"><table></table></div>
 </div>

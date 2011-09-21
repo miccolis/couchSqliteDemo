@@ -123,7 +123,7 @@ var getSource = function(model, callback) {
         base: model.get('base'),
         filename: model.get('filename')
     };
-    var id = path.resolve(options.base, options.filename);
+    var id = path.resolve(options.base, options.filename, model.get('id'));
 
     if (mapCache[id] == undefined) {
         mapCache[id] = new Cache(options);

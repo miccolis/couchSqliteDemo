@@ -24,5 +24,5 @@ command.prototype.initialize = function(options) {
     connection.on('error', function(err) {
         console.warn(err);
     });
-    connection.run();
+    connection.run(true);
 };

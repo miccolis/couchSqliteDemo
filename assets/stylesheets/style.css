@@ -10,6 +10,8 @@
 #header h1,
 #header p {
   float: left;
+  color: #eee;
+  margin:5px 0px 0px 5px;
   }
 
 #map {
@@ -21,11 +23,35 @@
 #controls {
   width: 340px;
   float: right;
-  height: 700px;
-  overflow: scroll;
-}
+  }
 
-table { table-layout: fixed; }
+#controls h2 {
+  float: left;
+  width: 165px;
+  line-height: 30px;
+  }
+
+#controls input {
+  float: right;
+  border-radius: 4px;
+  background: #ccc;
+  padding: 0px 5px;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 5px;
+  margin-right: 10px;
+  }
+
+div.input-table {
+  height: 670px;
+  overflow: scroll;
+  float: left;
+  clear: both;
+}
+table {
+  table-layout: fixed;
+  width: 340px;
+  }
 table tr {
   border: 1px solid #666;
   }

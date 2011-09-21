@@ -48,7 +48,9 @@ view = views.Main.extend({
         });
 
         if (redraw) {
-            this.mapView.trigger('redraw');
+            var v = this.mapView.model.get('version').split('-');
+            v[1] = parseInt(v[1]) + 1;
+            this.mapView.model.set({version: v.join('-')});
         }
     }
 });
