@@ -13,6 +13,8 @@ command.prototype.initialize = function(options) {
         schema: schema,
         couchUri: 'http://' + c.couchHost +':'+ c.couchPort +'/'+ c.couchPrefix + '_data',
     }).map(function(record) {
+        if (record && record._id == '_design/backbone') return;
+
         var item = {
             iso_codes: record.iso_codes,
             wb_names: record.wb_names,

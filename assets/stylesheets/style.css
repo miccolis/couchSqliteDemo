@@ -1,5 +1,5 @@
 .limiter {
-  width: 1024px;
+  width: 960px;
   margin: 0px auto;
 }
 #header {
@@ -13,21 +13,21 @@
   }
 
 #map {
-  width: 680px;
+  width: 640px;
   height: 700px;
   float: left;
 }
 
 #controls {
   background: #eee;
-  width: 340px;
+  width: 320px;
   float: right;
   }
 
 #controls h2 {
   float: left;
   padding-left: 10px;
-  width: 165px;
+  width: 125px;
   line-height: 30px;
   }
 

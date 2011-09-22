@@ -2,7 +2,7 @@ view = Backbone.View.extend({
     initialize: function(options) {
         options = options ||{};
 
-        this.width = options.width || 680;
+        this.width = options.width || 640;
         this.height = options.height || 630;
         this.extent = options.extent || false;
 

@@ -18,6 +18,9 @@ command.prototype.initialize = function(plugin) {
 
     (new sqlite3.Database(file, sqlite3.OPEN_READONLY)).each(sql, function(err, row) {
 
+        // Don't write base ISO data.
+        if (row.iso_codes == 'XXX') return;
+
         row._id = '/api/Location/' + row.iso_codes;
         row.id = row.iso_codes;
         row.factor = parseInt(Math.random() * 100);
