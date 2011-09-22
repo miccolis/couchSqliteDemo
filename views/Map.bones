@@ -3,7 +3,7 @@ view = Backbone.View.extend({
         options = options ||{};
 
         this.width = options.width || 680;
-        this.height = options.height || 700;
+        this.height = options.height || 630;
         this.extent = options.extent || false;
 
         _.bindAll(this, 'updateMap');

@@ -19,7 +19,7 @@ router = Backbone.Router.extend({
 
     // Helper to assemble the page title.
     pageTitle: function(view) {
-        var title =  'What is Bones?';
+        var title =  'CouchDB to SQLite';
         return (view.pageTitle ? view.pageTitle + ' | ' + title : title);
     },
 

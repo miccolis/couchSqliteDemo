@@ -10,8 +10,7 @@
   </head>
   <body>
     <div id='header' class='limiter'>
-      <h1>Project Name</h1>
-      <p>Project description</p>
+      <h1>CouchDB to SQLite</h1>
     </div>
     <div id='page' class='limiter clearfix'>
       <div id='main'><%= main %></div>
