@@ -1,5 +1,5 @@
 model = Backbone.Model.extend({
     url: function() {
-        return '/api/Hood/' + this.id;
+        return '/api/Location/' + this.id;
     }
 });

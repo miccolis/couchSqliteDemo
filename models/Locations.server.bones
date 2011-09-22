@@ -21,7 +21,7 @@ var update = function() {
 
 };
 
-models.Hoods.prototype.sync = function(method, collection, options) {
+models.Locations.prototype.sync = function(method, collection, options) {
     switch(method) {
         case 'read':
             return read(collection, options);

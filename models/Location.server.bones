@@ -1,6 +1,6 @@
 var Couch = require('backbone-couch');
 
-models.Hood.prototype.sync = function(method, model, options) {
+models.Location.prototype.sync = function(method, model, options) {
     var config = Bones.plugin.config;
 
     if (!this.id && this.get('id')) {

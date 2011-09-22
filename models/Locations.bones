@@ -1,1 +1,1 @@
-model = Backbone.Collection.extend({model: models.Hood});
+model = Backbone.Collection.extend({model: models.Location});

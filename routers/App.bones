@@ -7,7 +7,7 @@ router = Backbone.Router.extend({
     home: function() {
         var router = this,
             fetcher = this.fetcher(),
-            collection = new models.Hoods();
+            collection = new models.Locations();
 
         fetcher.push(collection);
         fetcher.fetch(function(err) {
