@@ -5,8 +5,8 @@
     <meta name="viewport" content="initial-scale = 1.0, width=device-width" />
     <title><%= title %></title>
     <script src="/assets/bones/all.js?<%= version %>" type="text/javascript" charset="utf-8"></script>
-    <link rel='stylesheet' href='/assets/demo/stylesheets/reset.css?<%= version %>' media='screen' />
-    <link rel='stylesheet' href='/assets/demo/stylesheets/style.css?<%= version %>' media='screen' />
+    <link rel='stylesheet' href='/assets/couchSqliteDemo/stylesheets/reset.css?<%= version %>' media='screen' />
+    <link rel='stylesheet' href='/assets/couchSqliteDemo/stylesheets/style.css?<%= version %>' media='screen' />
   </head>
   <body>
     <div id='header' class='limiter'>
